@@ -24,12 +24,24 @@
 .body {
   font-family: 'Roboto', 'Times New Roman', sans-serif;
   color: #212121;
+  width: 1600px;
+}
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list {
   list-style: none;
+  padding: 0 0;
+  margin: 0 0;
 }
 .header {
   background-color: var(--header-background);
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -39,11 +51,24 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
+.logo-header {
+  margin-right: 93px;
+}
 .logo-studio-header {
   color: var(--logo-color-header);
 }
 .logo-studio-footer {
   color: var(--logo-color-footer);
+}
+.header-section {
+  display: flex;
+  text-align: center;
+}
+.header-nav {
+  display: flex;
+  margin-right: 40px;
+  justify-content: center;
+  margin-top: 3px;
 }
 .header-link {
   text-decoration: none;
@@ -65,8 +90,22 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-mail {
+  margin-right: 50px;
+  margin-left: 215px;
+  justify-content: center;
+}
+.header-contacts {
+  display: flex;
+  margin-top: 3px;
+}
 .hero {
   background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 .hero-title {
   color: var(--hero-title-color);
@@ -75,6 +114,10 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin: 0 0 30px 0;
+  text-align: center;
+  width: 696px;
 }
 .hero-button {
   font-family: 'Roboto', sans-serif;
@@ -85,10 +128,22 @@
   cursor: pointer;
   letter-spacing: 0.06em;
   line-height: 1.88;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hero-button-hover-bg-color);
+}
+.qualities {
+  padding-top: 94px;
+}
+.qualities-list {
+  display: flex;
+}
+.qalities-item {
+  margin-right: 30px;
 }
 .qualities-title {
   font-size: 14px;
@@ -97,12 +152,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   line-height: 1.14;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 .qualities-text {
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0 0;
+  width: 270px;
+}
+.what-we-do {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .what-we-do-title {
   font-size: 36px;
@@ -110,12 +173,35 @@
   color: var(--title-h2-h3-color);
   letter-spacing: 0.03em;
   line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.what-we-do-list {
+  display: flex;
+}
+.what-we-do-img {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
 }
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
 }
 .team-list-item {
   background-color: var(--team-item-bg-color);
+  width: 270px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
 }
 .team-title {
   font-size: 36px;
@@ -123,6 +209,12 @@
   color: var(--title-h2-h3-color);
   letter-spacing: 0.03em;
   line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team-img {
+  margin: 0 0 30px 0;
 }
 .team-name {
   font-size: 16px;
@@ -130,6 +222,7 @@
   color: var(--title-h2-h3-color);
   letter-spacing: 0.03em;
   line-height: 1.19;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
@@ -139,23 +232,36 @@
 }
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 57px;
+}
+.logo-footer {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .footer-address {
+  display: inline-block;
   font-size: 14px;
   color: var(--footer-addres);
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 .footer-tel,
 .footer-mail {
+  display: inline-block;
   font-size: 14px;
   color: var(--footer-contacts);
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.71;
+}
+.footer-mail {
+  margin-bottom: 9px;
 }
 .footer-tel:hover,
 .footer-mail:hover,
