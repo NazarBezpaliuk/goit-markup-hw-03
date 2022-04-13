@@ -16,25 +16,32 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header class="header">
-      <div class="conteiner header-section">
-        <a href="./index.html" class="logo logo-header" lang="en"
+      <div class="conteiner">
+        <a href="./index.html" class="logo header-logo" lang="en"
           >Web<span class="logo-studio-header">Studio</span></a
         >
         <nav>
           <ul class="header-nav list">
-            <li><a class="header-link header-nav current" href="./index.html">Студия</a></li>
-            <li><a class="header-link header-nav" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="header-link header-nav" href="#">Контакти</a></li>
+            <li class="header-navigation">
+              <a class="header-link current" href="./index.html">Студия</a>
+            </li>
+            <li class="header-navigation">
+              <a class="header-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-navigation"><a class="header-link" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contacts list">
           <li class="header-mail">
-            <a class="header-link contact-header contact-mail" href="mailto:info@devstudio.com"
+            <a class="header-link contact-header" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
@@ -46,34 +53,34 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="cont">
+        <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-button">Заказать услугу</button>
         </div>
       </section>
       <section class="qualities">
-        <h2 hidden>Наши качества</h2>
         <div class="conteiner">
+          <h2 hidden>Наши качества</h2>
           <ul class="qualities-list list">
-            <li class="qalities-item">
+            <li class="qualities-items">
               <h3 class="qualities-title">Внимание к деталям</h3>
               <p class="qualities-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="qalities-item">
+            <li class="qualities-items">
               <h3 class="qualities-title">Пунктуальность</h3>
               <p class="qualities-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="qalities-item">
+            <li class="qualities-items">
               <h3 class="qualities-title">Планирование</h3>
               <p class="qualities-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="qalities-item">
+            <li class="qualities-items">
               <h3 class="qualities-title">Современные технологии</h3>
               <p class="qualities-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -152,7 +159,7 @@
     </main>
     <footer class="footer">
       <div class="conteiner">
-        <a href="./index.html" class="logo logo-footer" lang="en"
+        <a href="./index.html" class="logo footer-logo" lang="en"
           >Web<span class="logo-studio-footer">Studio</span></a
         >
         <address>
