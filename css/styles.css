@@ -33,6 +33,11 @@ ol {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .conteiner {
   margin-left: auto;
   margin-right: auto;
@@ -51,14 +56,18 @@ ol {
   background-color: var(--header-background);
   border: 1px solid #ececec;
 }
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header .conteiner {
   display: flex;
   align-items: center;
-  padding-bottom: 24px;
-  padding-top: 25px;
 }
 .header-logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -114,10 +123,13 @@ ol {
 }
 .hero {
   background-color: var(--hero-background-color);
+  padding: 200px 0;
+  text-align: center;
 }
 .hero .conteiner {
-  padding: 200px 237px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   display: inline-block;
@@ -150,7 +162,7 @@ ol {
 .hero-button:focus {
   background-color: var(--hero-button-hover-bg-color);
 }
-.qualities .conteiner {
+.qualities {
   display: flex;
   padding-bottom: 47px;
   padding-top: 94px;
@@ -179,7 +191,7 @@ ol {
   letter-spacing: 0.03em;
   max-width: 270px;
 }
-.what-we-do .conteiner {
+.what-we-do {
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -203,7 +215,7 @@ ol {
 .team {
   background-color: #f5f4fa;
 }
-.team .conteiner {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -250,7 +262,7 @@ ol {
 .footer {
   background-color: #2f303a;
 }
-.footer .conteiner {
+.footer {
   padding-top: 60px;
   padding-bottom: 57px;
 }
@@ -287,7 +299,7 @@ ol {
 .footer-mail:focus {
   color: #2196f3;
 }
-.portfolio .conteiner {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -343,8 +355,7 @@ ol {
 }
 .portfolio-item {
   box-sizing: border-box;
-  border: 1px solid #eeeeee;
-  margin-right: 25px;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 .portfolio-item:nth-child(3n + 3) {
@@ -353,8 +364,9 @@ ol {
 .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.portfolio-img {
-  margin-bottom: 20px;
+.portfolio-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-title {
   font-size: 18px;
@@ -362,7 +374,6 @@ ol {
   color: var(--title-h2-h3-color);
   letter-spacing: 0.06em;
   line-height: 2;
-  padding-left: 24px;
   margin-bottom: 4px;
 }
 .portfolio-text {
@@ -370,5 +381,4 @@ ol {
   color: var(--text-color);
   letter-spacing: 0.03em;
   line-height: 1.87;
-  padding: 0 0 20px 24px;
 }
