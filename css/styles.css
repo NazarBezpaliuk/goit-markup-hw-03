@@ -183,6 +183,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .qualities-text {
   font-size: 14px;
