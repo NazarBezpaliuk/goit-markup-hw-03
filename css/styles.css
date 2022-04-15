@@ -54,7 +54,7 @@ img {
 }
 .header {
   background-color: var(--header-background);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-link {
   padding-top: 32px;
